@@ -44,9 +44,13 @@
 
         public void DoMath(int num1, int num2)
         {
-            int result = num1 * num2;
+            int result = num1 + num2;
 
-            Console.WriteLine($"\n----\nThe result of these numbers Multiplied is '{result}'\n----");
+            Console.WriteLine($"\n----\nThe result of Adding the numbers is '{result}'----\n");
+
+            int result2 = num1 * num2;
+
+            Console.WriteLine($"\n----\nThe result of these numbers Multiplied is '{result2}'\n----");
         }
     }
 }
