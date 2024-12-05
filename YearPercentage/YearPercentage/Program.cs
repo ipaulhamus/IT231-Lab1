@@ -4,7 +4,42 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int num1 = 0;
+            int num2 = 0;
+
+            Console.Write("Enter the 1st Number: ");
+            String number = Console.ReadLine();
+
+            Console.WriteLine(Environment.NewLine);
+
+            try
+            {
+                num1 = int.Parse(number);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("!!Uh-Oh!!");
+                Console.WriteLine($"Not a number! Setting to 0");
+                Console.WriteLine(Environment.NewLine);
+
+                num1 = 0;
+            }
+
+            Console.Write("Enter the 2nd Number: ");
+            number = Console.ReadLine();
+
+            try
+            {
+                num2 = int.Parse(number);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("!!Uh-Oh!!");
+                Console.WriteLine($"Not a number! Setting to 0");
+                Console.WriteLine(Environment.NewLine);
+
+                num2 = 0;
+            }
         }
     }
 }
